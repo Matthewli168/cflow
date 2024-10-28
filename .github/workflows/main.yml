@@ -23,3 +23,5 @@ jobs:
           file: Dockerfile
           push: true  # 如果你想将镜像推送到 Docker Hub 或其他容器注册中心
           tags: matthew168/cflow:v1.0
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
